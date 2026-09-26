@@ -260,9 +260,13 @@ async function submitAttendance(){
     "service_el21xtu",
     "template_nain78f",
     {
-      nama: name,
-      status: selected.value,
-      waktu: time + " WITA"
+      nama_siswa: name,
+      status_kehadiran: selected.value,
+      tanggal: formatDate(d),
+      waktu: time,
+      bukti_sakit: "-",
+      nama_developer: "Dev: MADZxSIGMA / MADZ PROJECT",
+      nama_sistem: "Sistem Absensi Siswa"
     }
   )
   .then(function(response) {
